@@ -1,9 +1,9 @@
 import 'bootstrap';
 import '../styles/main.scss';
-import place from './components/locations';
+import printCard from './components/printCard/printCard';
 
 const init = () => {
-  
+  printCard.cardPrinter();
 };
 
 init();
