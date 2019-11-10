@@ -16,7 +16,7 @@ const locations = [
   },
   {
     title: 'Great Barrier Reef',
-    img: 'https://www.thetrendspotter.net/wp-content/uploads/2017/07/Great-Barrier-Reef.jpg',
+    img: 'https://tropicdays.com.au/wp-content/uploads/2018/08/greatbarrierreef.jpg',
     description: "Known for it's amazingly colorful coral reefs and fish.",
   },
   {

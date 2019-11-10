@@ -3,3 +3,17 @@
 body {
   background-color: blue;
 }
+
+h1 {
+  text-align: center;
+}
+
+#cardsHere {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 2px;
+}
