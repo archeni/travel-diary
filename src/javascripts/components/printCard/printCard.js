@@ -11,12 +11,16 @@ const cardPrinter = () => {
       <div class="card-body">
         <h5 class="card-title">${oneLocation.title}</h5>
         <p class="card-text">${oneLocation.description}</p>
-        <input type="text" id="${oneLocation.title}">
-        <button type="button" class="btn btn-info">Submit</button>
+        <input type="text" id="${oneLocation.id}Input">
+        <button type="button" id="${oneLocation.id}Btn" class="btn btn-info">Submit</button>
       </div>
     </div>`;
     print.printToDom('cardsHere', stringDom);
   }
+  const AkiButton = document.getElementById('Aki-Btn');
+  AkiButton.addEventListener('click', () => {
+    print.printToDom('diaryInfo', document.getElementById('Aki-Input').value);
+  });
 };
 
 export default { cardPrinter };
