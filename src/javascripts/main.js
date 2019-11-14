@@ -4,6 +4,7 @@ import printCard from './components/printCard/printCard';
 
 const init = () => {
   printCard.cardPrinter();
+  printCard.AkihabaraEvent();
 };
 
 init();

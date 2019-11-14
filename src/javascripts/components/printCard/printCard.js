@@ -17,10 +17,14 @@ const cardPrinter = () => {
     </div>`;
     print.printToDom('cardsHere', stringDom);
   }
+};
+
+const AkihabaraEvent = () => {
   const AkiButton = document.getElementById('Aki-Btn');
   AkiButton.addEventListener('click', () => {
+    console.log('hi');
     print.printToDom('diaryInfo', document.getElementById('Aki-Input').value);
   });
 };
 
-export default { cardPrinter };
+export default { cardPrinter, AkihabaraEvent };
