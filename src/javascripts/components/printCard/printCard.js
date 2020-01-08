@@ -6,7 +6,7 @@ const cardPrinter = () => {
   for (let i = 0; i < locationArr.length; i += 1) {
     const oneLocation = locationArr[i];
     let stringDom = '';
-    stringDom += `<div class="card" style="width: 20rem;">
+    stringDom += `<div class="card" id="${oneLocation.id}" style="width: 20rem;">
       <img src="${oneLocation.img}" class="card-img-top" alt="location">
       <div class="card-body">
         <h5 class="card-title">${oneLocation.title}</h5>
@@ -21,9 +21,13 @@ const cardPrinter = () => {
 
 const AkihabaraEvent = () => {
   const AkiButton = document.getElementById('Aki-Btn');
-  AkiButton.addEventListener('click', () => {
-    console.log('hi');
-    print.printToDom('diaryInfo', document.getElementById('Aki-Input').value);
+  AkiButton.addEventListener('click', (event) => {
+    const mainTravelCard = event.target.parentNode.parentNode.id;
+    if (mainTravelCard === 'Aki-') {
+      const akiInfo = document.getElementById('Aki-Input').value;
+      print.printToDom('diaryInfo', akiInfo);
+      console.log('hi');
+    }
   });
 };
 
