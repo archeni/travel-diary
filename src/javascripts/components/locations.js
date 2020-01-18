@@ -27,7 +27,7 @@ const locations = [
     title: 'Antarctica',
     img: 'https://lh3.googleusercontent.com/iNKTCT3urNf7X71zqCITmIFwK-mGlJ8Aoeji8c8vqJpzzS-G2_gEF_HdtHVoxH3uCRIcZqVoT-7kqwkXEOx9G6RD=s750',
     description: 'Known for its extreme cold, and polar bears.',
-    id: 'Ant-',
+    id: 'Antarctica-',
   },
 ];
 
